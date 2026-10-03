@@ -1,0 +1,17 @@
+{
+	"name": "ls_hospital_fileserver",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Hospital_dataset",
+			"userId": "PINNAMSETTY\\chenna",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyMTE3MWZkMS02YTU5LTRjNzQtOGViOS1mMGUzNGNkYjllMGUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "ir-hospital-data",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
