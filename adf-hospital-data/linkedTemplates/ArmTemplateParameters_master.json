@@ -11,6 +11,9 @@
 		"ls_hospital_fileserver_password": {
 			"value": ""
 		},
+		"HttpServer1_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://sthospitaldata01.dfs.core.windows.net/"
 		},
@@ -18,6 +21,12 @@
 			"value": "C:\\Hospital_dataset"
 		},
 		"ls_hospital_fileserver_properties_typeProperties_userId": {
+			"value": "PINNAMSETTY\\chenna"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
 			"value": "PINNAMSETTY\\chenna"
 		},
 		"containerUri": {

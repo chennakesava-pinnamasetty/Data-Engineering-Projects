@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ls_hospital_fileserver'"
 		},
+		"HttpServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer1'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://sthospitaldata01.dfs.core.windows.net/"
@@ -24,6 +28,14 @@
 			"defaultValue": "C:\\Hospital_dataset"
 		},
 		"ls_hospital_fileserver_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "PINNAMSETTY\\chenna"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "PINNAMSETTY\\chenna"
 		},
@@ -57,11 +69,20 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"HttpServer1_password": {
+						"value": "[parameters('HttpServer1_password')]"
+					},
 					"ls_hospital_fileserver_password": {
 						"value": "[parameters('ls_hospital_fileserver_password')]"
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"HttpServer1_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_url')]"
+					},
+					"HttpServer1_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_userName')]"
 					},
 					"ls_hospital_fileserver_properties_typeProperties_host": {
 						"value": "[parameters('ls_hospital_fileserver_properties_typeProperties_host')]"
