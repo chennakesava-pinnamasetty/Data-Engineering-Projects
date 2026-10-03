@@ -150,7 +150,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DelimitedText3')]",
+			"name": "[concat(parameters('factoryName'), '/SinkLocalDataToAdls')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -183,7 +183,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DelimitedText4')]",
+			"name": "[concat(parameters('factoryName'), '/SourcefromGit')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -210,7 +210,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DelimitedText5')]",
+			"name": "[concat(parameters('factoryName'), '/SinkGitToAdls01')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -268,7 +268,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DelimitedText2')]",
+			"name": "[concat(parameters('factoryName'), '/DatafromLocalFileFolder')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -473,14 +473,14 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "DelimitedText4",
+								"referenceName": "SourcefromGit",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
 						],
 						"outputs": [
 							{
-								"referenceName": "DelimitedText5",
+								"referenceName": "SinkGitToAdls01",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -493,8 +493,8 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/DelimitedText4')]",
-				"[concat(variables('factoryId'), '/datasets/DelimitedText5')]"
+				"[concat(variables('factoryId'), '/datasets/SourcefromGit')]",
+				"[concat(variables('factoryId'), '/datasets/SinkGitToAdls01')]"
 			]
 		},
 		{
@@ -563,7 +563,7 @@
 									},
 									"inputs": [
 										{
-											"referenceName": "DelimitedText2",
+											"referenceName": "DatafromLocalFileFolder",
 											"type": "DatasetReference",
 											"parameters": {
 												"p_name": {
@@ -575,7 +575,7 @@
 									],
 									"outputs": [
 										{
-											"referenceName": "DelimitedText3",
+											"referenceName": "SinkLocalDataToAdls",
 											"type": "DatasetReference",
 											"parameters": {
 												"p_name": {
@@ -622,8 +622,8 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/DelimitedText2')]",
-				"[concat(variables('factoryId'), '/datasets/DelimitedText3')]"
+				"[concat(variables('factoryId'), '/datasets/DatafromLocalFileFolder')]",
+				"[concat(variables('factoryId'), '/datasets/SinkLocalDataToAdls')]"
 			]
 		}
 	]
