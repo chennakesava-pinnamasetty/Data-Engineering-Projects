@@ -1,0 +1,15 @@
+{
+	"name": "ProductBasedDF",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5a86f60f-6147-42ca-946b-0896a7df68ba",
+		"tenantId": "8f6646be-6368-4110-ab16-8f2ee2dbb49c"
+	}
+}
