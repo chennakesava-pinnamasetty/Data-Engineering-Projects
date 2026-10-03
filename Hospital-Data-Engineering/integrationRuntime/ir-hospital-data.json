@@ -1,0 +1,7 @@
+{
+	"name": "ir-hospital-data",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Integration Runtime for data movement and connectivity between hospital data sources and Azure services in the data engineering pipeline."
+	}
+}
