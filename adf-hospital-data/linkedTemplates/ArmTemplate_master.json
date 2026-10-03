@@ -11,31 +11,47 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
-		"ls_hospital_fileserver_password": {
+		"AzureSqlDatabase1_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'ls_hospital_fileserver'"
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
 		},
 		"HttpServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'HttpServer1'"
 		},
+		"ls_hospital_fileserver_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_hospital_fileserver'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://sthospitaldata01.dfs.core.windows.net/"
 		},
-		"ls_hospital_fileserver_properties_typeProperties_host": {
+		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "C:\\Hospital_dataset"
+			"defaultValue": "hospitalserver001.database.windows.net"
 		},
-		"ls_hospital_fileserver_properties_typeProperties_userId": {
+		"AzureSqlDatabase1_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "PINNAMSETTY\\chenna"
+			"defaultValue": "HospitalDB"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "chennakesava"
 		},
 		"HttpServer1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"HttpServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "PINNAMSETTY\\chenna"
+		},
+		"ls_hospital_fileserver_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "C:\\Hospital_dataset"
+		},
+		"ls_hospital_fileserver_properties_typeProperties_userId": {
 			"type": "string",
 			"defaultValue": "PINNAMSETTY\\chenna"
 		},
@@ -69,6 +85,9 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
 					"HttpServer1_password": {
 						"value": "[parameters('HttpServer1_password')]"
 					},
@@ -77,6 +96,15 @@
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
 					},
 					"HttpServer1_properties_typeProperties_url": {
 						"value": "[parameters('HttpServer1_properties_typeProperties_url')]"

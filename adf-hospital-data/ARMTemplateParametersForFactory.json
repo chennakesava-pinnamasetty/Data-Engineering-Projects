@@ -8,25 +8,37 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
-		"ls_hospital_fileserver_password": {
+		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
 		"HttpServer1_password": {
 			"value": ""
 		},
+		"ls_hospital_fileserver_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://sthospitaldata01.dfs.core.windows.net/"
 		},
-		"ls_hospital_fileserver_properties_typeProperties_host": {
-			"value": "C:\\Hospital_dataset"
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "hospitalserver001.database.windows.net"
 		},
-		"ls_hospital_fileserver_properties_typeProperties_userId": {
-			"value": "PINNAMSETTY\\chenna"
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "HospitalDB"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "chennakesava"
 		},
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/"
 		},
 		"HttpServer1_properties_typeProperties_userName": {
+			"value": "PINNAMSETTY\\chenna"
+		},
+		"ls_hospital_fileserver_properties_typeProperties_host": {
+			"value": "C:\\Hospital_dataset"
+		},
+		"ls_hospital_fileserver_properties_typeProperties_userId": {
 			"value": "PINNAMSETTY\\chenna"
 		}
 	}
