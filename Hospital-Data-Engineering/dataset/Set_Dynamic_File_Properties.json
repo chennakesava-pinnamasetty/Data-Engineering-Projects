@@ -5,12 +5,16 @@
 			"referenceName": "ls_hospital_fileserver",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"p_filenames": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "FileServerLocation",
-				"fileName": "hospital_large_dataset.csv"
+				"type": "FileServerLocation"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
