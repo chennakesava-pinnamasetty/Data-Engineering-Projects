@@ -1,0 +1,139 @@
+{
+	"name": "SinkSQLtoAdls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Patient_ID",
+				"type": "String"
+			},
+			{
+				"name": "Admission_ID",
+				"type": "String"
+			},
+			{
+				"name": "Patient_Name",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Blood_Group",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Department",
+				"type": "String"
+			},
+			{
+				"name": "Doctor_Name",
+				"type": "String"
+			},
+			{
+				"name": "Diagnosis",
+				"type": "String"
+			},
+			{
+				"name": "Treatment",
+				"type": "String"
+			},
+			{
+				"name": "Admission_Type",
+				"type": "String"
+			},
+			{
+				"name": "Admission_Date",
+				"type": "String"
+			},
+			{
+				"name": "Discharge_Date",
+				"type": "String"
+			},
+			{
+				"name": "Length_of_Stay_Days",
+				"type": "String"
+			},
+			{
+				"name": "Room_Charge",
+				"type": "String"
+			},
+			{
+				"name": "Doctor_Fee",
+				"type": "String"
+			},
+			{
+				"name": "Medicine_Cost",
+				"type": "String"
+			},
+			{
+				"name": "Lab_Cost",
+				"type": "String"
+			},
+			{
+				"name": "Procedure_Cost",
+				"type": "String"
+			},
+			{
+				"name": "Total_Bill",
+				"type": "String"
+			},
+			{
+				"name": "Insurance_Type",
+				"type": "String"
+			},
+			{
+				"name": "Insurance_Covered",
+				"type": "String"
+			},
+			{
+				"name": "Patient_Payment",
+				"type": "String"
+			},
+			{
+				"name": "Payment_Status",
+				"type": "String"
+			},
+			{
+				"name": "Discharge_Status",
+				"type": "String"
+			},
+			{
+				"name": "Readmission_30_Days",
+				"type": "String"
+			},
+			{
+				"name": "Satisfaction_Score",
+				"type": "String"
+			},
+			{
+				"name": "Emergency_Visit",
+				"type": "String"
+			}
+		]
+	}
+}

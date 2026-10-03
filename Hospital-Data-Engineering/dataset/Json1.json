@@ -1,0 +1,26 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "latload.json",
+				"fileSystem": "lastload"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"last load": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
