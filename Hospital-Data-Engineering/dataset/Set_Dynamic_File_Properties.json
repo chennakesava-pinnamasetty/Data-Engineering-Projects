@@ -1,0 +1,22 @@
+{
+	"name": "Set_Dynamic_File_Properties",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_hospital_fileserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "hospital_large_dataset.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
