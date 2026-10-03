@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-hospital-data"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"ls_hospital_fileserver_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://sthospitaldata01.dfs.core.windows.net/"
+		},
+		"ls_hospital_fileserver_properties_typeProperties_host": {
+			"value": "C:\\Hospital_dataset"
+		},
+		"ls_hospital_fileserver_properties_typeProperties_userId": {
+			"value": "PINNAMSETTY\\chenna"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
