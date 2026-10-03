@@ -1,0 +1,15 @@
+{
+	"name": "adf-hospital-data",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e7fa05d9-2c24-48fe-9bd1-b9984a8c9d98",
+		"tenantId": "8f6646be-6368-4110-ab16-8f2ee2dbb49c"
+	}
+}
