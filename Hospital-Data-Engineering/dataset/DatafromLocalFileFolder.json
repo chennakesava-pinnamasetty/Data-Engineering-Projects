@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText2",
+	"name": "DatafromLocalFileFolder",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_hospital_fileserver",

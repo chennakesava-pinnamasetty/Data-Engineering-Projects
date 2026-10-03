@@ -62,7 +62,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DelimitedText2",
+									"referenceName": "DatafromLocalFileFolder",
 									"type": "DatasetReference",
 									"parameters": {
 										"p_name": {
@@ -74,7 +74,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DelimitedText3",
+									"referenceName": "SinkLocalDataToAdls",
 									"type": "DatasetReference",
 									"parameters": {
 										"p_name": {

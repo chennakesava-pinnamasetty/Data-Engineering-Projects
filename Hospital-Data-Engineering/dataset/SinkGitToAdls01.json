@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText5",
+	"name": "SinkGitToAdls01",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

@@ -170,13 +170,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText4",
+						"referenceName": "SourcefromGit",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText5",
+						"referenceName": "SinkGitToAdls01",
 						"type": "DatasetReference"
 					}
 				]
