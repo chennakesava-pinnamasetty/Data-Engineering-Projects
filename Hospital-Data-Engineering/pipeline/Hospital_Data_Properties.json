@@ -1,6 +1,7 @@
 {
 	"name": "Hospital_Data_Properties",
 	"properties": {
+		"description": "Sets and manages dynamic file properties and metadata for hospital data files before processing and ingestion into Azure Data Lake Storage.",
 		"activities": [
 			{
 				"name": "Copy_Hospital_Local_to_ADLS",
@@ -34,7 +35,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"fileExtension": ".csv"
 						}
 					},
 					"enableStaging": false,
