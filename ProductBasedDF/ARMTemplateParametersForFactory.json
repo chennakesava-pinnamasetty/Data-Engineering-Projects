@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ProductBasedDF"
+		},
+		"DBSinkInContainers_accountKey": {
+			"value": ""
+		},
+		"HttpServer1_password": {
+			"value": ""
+		},
+		"SqlDatabaseToContainers_password": {
+			"value": ""
+		},
+		"DBSinkInContainers_properties_typeProperties_url": {
+			"value": "https://stproductsretail.dfs.core.windows.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "chennakesava"
+		},
+		"SqlDatabaseToContainers_properties_typeProperties_server": {
+			"value": "sr-productsdb.database.windows.net"
+		},
+		"SqlDatabaseToContainers_properties_typeProperties_database": {
+			"value": "productdb"
+		},
+		"SqlDatabaseToContainers_properties_typeProperties_userName": {
+			"value": "chennakesava"
+		}
+	}
+}

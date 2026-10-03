@@ -1,0 +1,105 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "ProductBasedDF"
+		},
+		"DBSinkInContainers_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DBSinkInContainers'"
+		},
+		"HttpServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer1'"
+		},
+		"SqlDatabaseToContainers_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SqlDatabaseToContainers'"
+		},
+		"DBSinkInContainers_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://stproductsretail.dfs.core.windows.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "chennakesava"
+		},
+		"SqlDatabaseToContainers_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sr-productsdb.database.windows.net"
+		},
+		"SqlDatabaseToContainers_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "productdb"
+		},
+		"SqlDatabaseToContainers_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "chennakesava"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "ProductBasedDF_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"DBSinkInContainers_accountKey": {
+						"value": "[parameters('DBSinkInContainers_accountKey')]"
+					},
+					"HttpServer1_password": {
+						"value": "[parameters('HttpServer1_password')]"
+					},
+					"SqlDatabaseToContainers_password": {
+						"value": "[parameters('SqlDatabaseToContainers_password')]"
+					},
+					"DBSinkInContainers_properties_typeProperties_url": {
+						"value": "[parameters('DBSinkInContainers_properties_typeProperties_url')]"
+					},
+					"HttpServer1_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_url')]"
+					},
+					"HttpServer1_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_userName')]"
+					},
+					"SqlDatabaseToContainers_properties_typeProperties_server": {
+						"value": "[parameters('SqlDatabaseToContainers_properties_typeProperties_server')]"
+					},
+					"SqlDatabaseToContainers_properties_typeProperties_database": {
+						"value": "[parameters('SqlDatabaseToContainers_properties_typeProperties_database')]"
+					},
+					"SqlDatabaseToContainers_properties_typeProperties_userName": {
+						"value": "[parameters('SqlDatabaseToContainers_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
