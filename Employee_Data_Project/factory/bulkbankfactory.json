@@ -1,0 +1,15 @@
+{
+	"name": "bulkbankfactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2ed25c62-2484-4b26-97c2-69076fc4e9ac",
+		"tenantId": "8f6646be-6368-4110-ab16-8f2ee2dbb49c"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "onprem_fileServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Employees_data",
+			"userId": "PINNAMSETTY\\chenna",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhYWEwMjFhYi0xYjk0LTQ4ZDItYmY3MS05MzZjNDdmMmZlMGEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "chenn-selfHosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

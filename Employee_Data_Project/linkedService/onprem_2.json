@@ -1,0 +1,17 @@
+{
+	"name": "onprem_2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\company_dataset",
+			"userId": "PINNAMSETTY\\chenna",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmOWY0ZTVkMS1hMzQ5LTQ0MzgtOTEzMy03NWVkNzRjMjkyYTciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "chenn-selfHosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "chenn-selfHosted",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
